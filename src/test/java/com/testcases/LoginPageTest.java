@@ -18,16 +18,17 @@ public class LoginPageTest extends Base {
 		lp = new LoginPage();
 	}
 	
-	@Test
+	@Test(priority = 1)
 	public void validateTitleTest() {
 		String expectedTitle = "OrangeHRM";
 		String actualTitle = lp.validateTitle();
 		Assert.assertEquals(actualTitle, expectedTitle);
 	}
 	
-	@Test
+	@Test(priority = 2)
 	public void validateLoginTest() {
-		//write all the code here
+		lp.validateLogin(prop.getProperty("username"), prop.getProperty("password"));
+		
 	}
 	
 	@AfterMethod

@@ -19,8 +19,8 @@ public class Base {
 	
 	public Base() {
 		try {
+			prop = new Properties();
 			FileInputStream fis = new FileInputStream("./src/main/java/com/config/config.properties");
-			System.out.println(fis);
 			prop.load(fis);
 		} catch (FileNotFoundException e) {
 			System.out.println("File Not Found!!!");
