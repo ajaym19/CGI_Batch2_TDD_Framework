@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -16,6 +17,7 @@ public class Base {
 
 	public static WebDriver driver;
 	public static Properties prop;
+	public static Logger logger;
 	
 	public Base() {
 		try {
@@ -30,22 +32,29 @@ public class Base {
 	}
 	
 	public void initialization() {
+		logger = Logger.getLogger(Base.class);
+		logger.info("Trying to read browser name");
 		String browser = prop.getProperty("browser");
 		if (browser.equals("chrome")) {
+			logger.info("Identified the browser as "+ browser);
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} else if (browser.equals("firefox")) {
+			logger.info("Identified the browser as "+ browser);
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		} else if (browser.equals("ie")) {
+			logger.info("Identified the browser as "+ browser);
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 		}
-		
+		logger.info("Trying to launch the appplication");
 		driver.get(prop.getProperty("url"));
+		logger.info("Appplication launched successfully");
 	}
 	
 	public void tearDown() {
 		driver.quit();
+		logger.info("Closing the browser");
 	}
 }

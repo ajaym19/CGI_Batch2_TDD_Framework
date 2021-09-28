@@ -27,10 +27,11 @@ public class LoginPage extends Base {
 		return driver.getTitle();
 	}
 
-	public void validateLogin(String uname, String pwd) {
+	public DashboardPage validateLogin(String uname, String pwd) {
 		username.sendKeys(uname);
 		password.sendKeys(pwd);
 		loginBtn.click();
+		return new DashboardPage();
 	}
 
 }

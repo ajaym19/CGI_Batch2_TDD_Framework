@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-28T15:08:40 IST" name="Default suite" finished-at="2021-09-28T15:09:02 IST" duration-ms="22369">
+  <suite started-at="2021-09-28T17:36:51 IST" name="Default suite" finished-at="2021-09-28T17:37:11 IST" duration-ms="19727">
     <groups>
     </groups>
-    <test started-at="2021-09-28T15:08:40 IST" name="Default test" finished-at="2021-09-28T15:09:02 IST" duration-ms="22369">
+    <test started-at="2021-09-28T17:36:51 IST" name="Default test" finished-at="2021-09-28T17:37:11 IST" duration-ms="19727">
       <class name="com.testcases.LoginPageTest">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.testcases.LoginPageTest@7b227d8d]" started-at="2021-09-28T15:08:40 IST" name="browserSetup" finished-at="2021-09-28T15:08:49 IST" duration-ms="9470" status="PASS">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.testcases.LoginPageTest@45018215]" started-at="2021-09-28T17:36:51 IST" name="browserSetup" finished-at="2021-09-28T17:36:59 IST" duration-ms="7793" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="validateTitleTest()[pri:1, instance:com.testcases.LoginPageTest@7b227d8d]" started-at="2021-09-28T15:08:49 IST" name="validateTitleTest" finished-at="2021-09-28T15:08:49 IST" duration-ms="26" status="PASS">
+        <test-method signature="validateTitleTest()[pri:1, instance:com.testcases.LoginPageTest@45018215]" started-at="2021-09-28T17:36:59 IST" name="validateTitleTest" finished-at="2021-09-28T17:36:59 IST" duration-ms="68" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTitleTest -->
-        <test-method is-config="true" signature="closeBrowserSetup()[pri:0, instance:com.testcases.LoginPageTest@7b227d8d]" started-at="2021-09-28T15:08:49 IST" name="closeBrowserSetup" finished-at="2021-09-28T15:08:49 IST" duration-ms="221" status="PASS">
+        <test-method is-config="true" signature="closeBrowserSetup()[pri:0, instance:com.testcases.LoginPageTest@45018215]" started-at="2021-09-28T17:36:59 IST" name="closeBrowserSetup" finished-at="2021-09-28T17:36:59 IST" duration-ms="265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowserSetup -->
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.testcases.LoginPageTest@7b227d8d]" started-at="2021-09-28T15:08:49 IST" name="browserSetup" finished-at="2021-09-28T15:08:57 IST" duration-ms="7501" status="PASS">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.testcases.LoginPageTest@45018215]" started-at="2021-09-28T17:36:59 IST" name="browserSetup" finished-at="2021-09-28T17:37:06 IST" duration-ms="7116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="validateLoginTest()[pri:2, instance:com.testcases.LoginPageTest@7b227d8d]" started-at="2021-09-28T15:08:57 IST" name="validateLoginTest" finished-at="2021-09-28T15:09:02 IST" duration-ms="4885" status="PASS">
+        <test-method signature="validateLoginTest()[pri:2, instance:com.testcases.LoginPageTest@45018215]" started-at="2021-09-28T17:37:06 IST" name="validateLoginTest" finished-at="2021-09-28T17:37:11 IST" duration-ms="4219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginTest -->
-        <test-method is-config="true" signature="closeBrowserSetup()[pri:0, instance:com.testcases.LoginPageTest@7b227d8d]" started-at="2021-09-28T15:09:02 IST" name="closeBrowserSetup" finished-at="2021-09-28T15:09:02 IST" duration-ms="209" status="PASS">
+        <test-method is-config="true" signature="closeBrowserSetup()[pri:0, instance:com.testcases.LoginPageTest@45018215]" started-at="2021-09-28T17:37:11 IST" name="closeBrowserSetup" finished-at="2021-09-28T17:37:11 IST" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowserSetup -->
