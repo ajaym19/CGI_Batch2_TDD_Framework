@@ -5,15 +5,17 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.base.Base;
 import com.pages.LoginPage;
 
-public class LoginPageTest {
+public class LoginPageTest extends Base {
 	
-	LoginPage lp = new LoginPage();
+	LoginPage lp;
 
 	@BeforeMethod
 	public void browserSetup() {
-		lp.browserSetup();
+		initialization();
+		lp = new LoginPage();
 	}
 	
 	@Test
@@ -30,6 +32,6 @@ public class LoginPageTest {
 	
 	@AfterMethod
 	public void closeBrowserSetup() {
-		lp.closeSetup();
+		tearDown();
 	}
 }
