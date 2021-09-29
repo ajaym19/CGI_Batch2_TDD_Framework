@@ -6,6 +6,9 @@
       <class name="com.testcases.LoginPageTest">
         <methods>
           <include name="browserSetup"/>
+          <include name="validateTitleTest"/>
+          <include name="reportSetup"/>
+          <include name="closeReportSetup"/>
           <include name="validateLoginTest"/>
           <include name="closeBrowserSetup"/>
         </methods>
